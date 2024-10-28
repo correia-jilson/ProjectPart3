@@ -1,56 +1,57 @@
-const express = require('express');
-const { Pool } = require('pg');
-require('dotenv').config();
+const express = require("express");
+const cors = require("cors");
+const axios = require("axios");
 
 const app = express();
-const port = 3000;
+const PORT = 3000;
 
-const pool = new Pool({
-  user: process.env.DB_USER,
-  host: process.env.DB_HOST,
-  database: process.env.DB_NAME,
-  password: process.env.DB_PASSWORD,
-  port: 5432,
-});
+// CORS configuration to allow requests from frontend (http://localhost:3000)
+app.use(cors({ origin: "http://localhost:3000" }));
 
-app.get('/api/block-height', async (req, res) => {
+// Sample endpoints with simulated data
+app.get("/api/block-height", async (req, res) => {
   try {
-    const result = await pool.query('SELECT MAX(block_height) AS block_height FROM block_info');
-    res.json(result.rows[0]);
-  } catch (err) {
-    console.error(err);
-    res.status(500).send('Server error');
+    // Simulate fetching block height (replace with actual logic)
+    const blockHeight = 754000;
+    res.json({ block_height: blockHeight });
+  } catch (error) {
+    res.status(500).json({ error: "Failed to fetch block height" });
   }
 });
 
-app.get('/api/transaction-count', async (req, res) => {
+app.get("/api/transaction-count", async (req, res) => {
   try {
-    const result = await pool.query('SELECT transaction_count FROM block_info ORDER BY block_height DESC LIMIT 1');
-    res.json(result.rows[0]);
-  } catch (err) {
-    console.error(err);
-    res.status(500).send('Server error');
+    // Simulate fetching transaction count (replace with actual logic)
+    const transactionCount = 2345;
+    res.json({ transaction_count: transactionCount });
+  } catch (error) {
+    res.status(500).json({ error: "Failed to fetch transaction count" });
   }
 });
 
-app.get('/api/bitcoin-price', async (req, res) => {
+app.get("/api/bitcoin-price", async (req, res) => {
   try {
-    const result = await pool.query('SELECT * FROM bitcoin_price ORDER BY timestamp DESC LIMIT 1');
-    res.json(result.rows[0]);
-  } catch (err) {
-    console.error(err);
-    res.status(500).send('Server error');
+    // Simulate fetching Bitcoin price (replace with actual API call)
+    const priceUsd = 50000;
+    const priceEur = 47000;
+    const volumeUsd = 100000000;
+    res.json({ price_usd: priceUsd, price_eur: priceEur, volume_usd: volumeUsd });
+  } catch (error) {
+    res.status(500).json({ error: "Failed to fetch Bitcoin price" });
   }
 });
 
-app.get('/api/bitcoin-dominance', async (req, res) => {
+app.get("/api/bitcoin-dominance", async (req, res) => {
   try {
-    const result = await pool.query('SELECT btc_dominance FROM bitcoin_metrics ORDER BY timestamp DESC LIMIT 1');
-    res.json(result.rows[0]);
-  } catch (err) {
-    console.error(err);
-    res.status(500).send('Server error');
+    // Simulate fetching Bitcoin dominance (replace with actual logic)
+    const btcDominance = 45.6;
+    res.json({ btc_dominance: btcDominance });
+  } catch (error) {
+    res.status(500).json({ error: "Failed to fetch Bitcoin dominance" });
   }
 });
 
-app.listen(port, () => console.log(`Server running on port ${port}`));
+// Start the server
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
