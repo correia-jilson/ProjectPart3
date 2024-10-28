@@ -1,0 +1,11 @@
+/Users/jilsoncorreia/Downloads/ProjectPart3/ingestion/target/release/deps/libipnet-04b607735a62a2a4.rmeta: /Users/jilsoncorreia/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ipnet-2.10.1/src/lib.rs /Users/jilsoncorreia/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ipnet-2.10.1/src/ipext.rs /Users/jilsoncorreia/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ipnet-2.10.1/src/ipnet.rs /Users/jilsoncorreia/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ipnet-2.10.1/src/parser.rs /Users/jilsoncorreia/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ipnet-2.10.1/src/mask.rs
+
+/Users/jilsoncorreia/Downloads/ProjectPart3/ingestion/target/release/deps/libipnet-04b607735a62a2a4.rlib: /Users/jilsoncorreia/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ipnet-2.10.1/src/lib.rs /Users/jilsoncorreia/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ipnet-2.10.1/src/ipext.rs /Users/jilsoncorreia/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ipnet-2.10.1/src/ipnet.rs /Users/jilsoncorreia/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ipnet-2.10.1/src/parser.rs /Users/jilsoncorreia/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ipnet-2.10.1/src/mask.rs
+
+/Users/jilsoncorreia/Downloads/ProjectPart3/ingestion/target/release/deps/ipnet-04b607735a62a2a4.d: /Users/jilsoncorreia/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ipnet-2.10.1/src/lib.rs /Users/jilsoncorreia/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ipnet-2.10.1/src/ipext.rs /Users/jilsoncorreia/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ipnet-2.10.1/src/ipnet.rs /Users/jilsoncorreia/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ipnet-2.10.1/src/parser.rs /Users/jilsoncorreia/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ipnet-2.10.1/src/mask.rs
+
+/Users/jilsoncorreia/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ipnet-2.10.1/src/lib.rs:
+/Users/jilsoncorreia/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ipnet-2.10.1/src/ipext.rs:
+/Users/jilsoncorreia/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ipnet-2.10.1/src/ipnet.rs:
+/Users/jilsoncorreia/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ipnet-2.10.1/src/parser.rs:
+/Users/jilsoncorreia/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ipnet-2.10.1/src/mask.rs:
