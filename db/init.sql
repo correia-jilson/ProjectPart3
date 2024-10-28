@@ -1,7 +1,7 @@
 CREATE TABLE IF NOT EXISTS block_info (
     id SERIAL PRIMARY KEY,
     block_height BIGINT NOT NULL,
-    transaction_count INT
+    transaction_count BIGINT
 );
 
 CREATE TABLE IF NOT EXISTS bitcoin_price (
@@ -20,3 +20,6 @@ CREATE TABLE IF NOT EXISTS bitcoin_metrics (
     volume_usd FLOAT,
     timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+ALTER TABLE block_info ALTER COLUMN block_height TYPE BIGINT;
+ALTER TABLE block_info ALTER COLUMN transaction_count TYPE BIGINT;

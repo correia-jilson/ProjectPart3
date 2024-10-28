@@ -40,7 +40,7 @@ services:
       DB_NAME: ${DB_NAME}
       DB_HOST: db
     ports:
-      - '5000:3000' # Host port 5000 mapped to container port 3000
+      - '5001:3000' # Host port 5000 mapped to container port 3000
     networks:
       - app-network
 

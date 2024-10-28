@@ -30,7 +30,7 @@ function BlockHeight() {
   const [blockHeight, setBlockHeight] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/block-height")
+    fetch("http://localhost:5001/api/block-height")
       .then((res) => res.json())
       .then((data) => setBlockHeight(data.block_height));
   }, []);
@@ -48,7 +48,7 @@ function TransactionCount() {
   const [transactionCount, setTransactionCount] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/transaction-count")
+    fetch("http://localhost:5001/api/transaction-count")
       .then((res) => res.json())
       .then((data) => setTransactionCount(data.transaction_count));
   }, []);
@@ -68,7 +68,7 @@ function BitcoinPrice() {
   const [volumeUsd, setVolumeUsd] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/bitcoin-price")
+    fetch("http://localhost:5001/api/bitcoin-price")
       .then((res) => res.json())
       .then((data) => {
         setPriceUsd(data.price_usd);
@@ -92,7 +92,7 @@ function BitcoinDominance() {
   const [btcDominance, setBtcDominance] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/bitcoin-dominance")
+    fetch("http://localhost:5001/api/bitcoin-dominance")
       .then((res) => res.json())
       .then((data) => setBtcDominance(data.btc_dominance));
   }, []);
