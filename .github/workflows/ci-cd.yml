@@ -21,7 +21,6 @@ jobs:
         uses: actions-rs/toolchain@v1
         with:
           toolchain: stable
-          components: [clippy, rustfmt]
 
       - name: Build and Test Rust Ingestion Service
         working-directory: ./ingestion
